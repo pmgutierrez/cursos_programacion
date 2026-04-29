@@ -13,7 +13,7 @@ def agregar_producto(productos):
         'precio':precio,
         'stock':stock
     }
-    productos.append()
+    productos.append(producto)
 
 def mostrar_producto(productos):
     for producto in productos:
@@ -51,15 +51,43 @@ def vender_producto(productos):
             return
     print("Producto no encontrado.")
 
-opcion = 0    
-print("**** Menu - Almacen ****")
-print("*   1. Agregar         *")
-print("*   2. Mostrar         *")
-print("*   3. Separar Precios *")
-print("*   4. Total Precios   *") 
-print("*   5. Controlar Stock *")
-print("*   6. Vender Stock    *")
-print("*   7. Salir           *")
-print("************************")
-opcion = int(input("* Ingrese una opcion: "))
-print("************************")
+productos=[]
+
+while True:
+    print("\n1.Agregar producto")
+    print('2.Mostrar productos')
+    print("3.Ver productos especiales y ofertas")
+    print("4.Total del stock")
+    print('5.Control de stock')
+    print('6.Vender producto')
+    print("7.SALIR")
+
+    opciones=int(input("Elije una opcion"))
+
+    if opciones == 1:
+        agregar_producto(productos)
+    elif opciones == 2:
+        mostrar_producto(productos)
+    elif opciones == 3:
+        caros,ofertas=separar_precios(productos)
+        print("Productos Especiales: ")
+        for caro in caros:
+            print(caro['nombre'],caro['precio'],caro['stock'])
+        print("Productos en oferta: ")
+        for o in ofertas:
+            print(o["nombre"],o["precio"],o["stock"])
+    
+    elif opciones==4:
+        print(total_precio_stock(productos))
+
+    elif opciones==5:
+        controlar_stock(productos)
+    elif opciones==6:
+        vender_producto(productos)
+
+    elif opciones==7:
+        break
+
+
+
+        

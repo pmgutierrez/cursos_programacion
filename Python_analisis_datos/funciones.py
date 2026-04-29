@@ -1,5 +1,3 @@
-
-
 #funciones transcriben bloques de codigos solo llamando al nombre de la funcion. sintaxis: 
 # def nombre de la funcion():
 #       bloque de codigo.
