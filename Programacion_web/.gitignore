@@ -1,0 +1,23 @@
+# Dependencias de Node.js (si usas npm o yarn)
+node_modules/
+package-lock.json # Opcional: a veces se sube, pero node_modules NUNCA
+
+# Archivos de producción/build
+dist/
+build/
+.out/
+
+# Variables de entorno (NUNCA subas claves API o contraseñas)
+.env
+.env.local
+.env.production
+
+# Editor de código
+.vscode/
+.idea/
+.DS_Store # Si usas Mac, pero no hace daño en Linux
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
