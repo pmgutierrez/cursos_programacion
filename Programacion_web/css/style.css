@@ -1,0 +1,103 @@
+/*Reseteo
+em el body para todas las estructuras de ese body.Depende del padre.
+rem se marca desde etiqueta html.
+
+*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px ;
+}
+
+.header{
+
+position: fixed;
+top: 0;
+width: 100%;
+background-color: black;
+color: antiquewhite;
+padding: 18px;
+
+
+
+}
+.nav{
+position: sticky;
+top: 80px;
+margin-top: 130px;
+background-color: orange;
+
+}
+
+.nav ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type:none ;
+}
+
+.nav li{
+    cursor: pointer;
+}
+
+.main{
+margin-top: 110px;
+padding: 20px;
+}
+
+.card{
+position:relative;
+width: 250px;
+display: inline-block;
+padding: 20px;
+margin: 20px;
+background-color: lightgray;
+border-radius: 10px;
+
+}
+.caja1{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    background-color: red;
+    color: #e3dfdf;
+    padding: 8px;
+    text-align: center;
+    font-weight: bolder;
+}
+.btn{
+    position: absolute;
+    bottom: 10px;
+    right: 1em;
+    background-color:rgb(49, 49, 181);
+    color: #e3dfdf;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 1rem;
+}
+
+.waps{
+position: fixed;
+right: 20px;
+bottom: 15px;
+
+border-radius: 10px;
+padding: 15px;
+
+font-weight: bold;
+background-image:url(Imagenes/wa.jpg) ;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+.titulo{
+    position: relative;
+    left: 78px;
+}
+/*hover es un pseudoclase que me permite cambiar estructuras de caja y darle nuevas al pasar el mouse.*/
+.waps:hover{
+    color:antiquewhite;
+    font-size: xx-large;
+    font-weight: bolder;
+}

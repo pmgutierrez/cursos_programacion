@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    background-color:darkred;
+    display:inline-block;
+    width: 80%;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.opcion1{
+    background-color: yellowgreen;
+}
+
+.opcion2{
+    background-color: burlywood;
+}
+
+.opcion3{
+    background-color: aquamarine;
+}
+
+.catalogo{
+    background-color: darkcyan;
+    height: 400px;
+    width: 80%;
+    margin: 5px;
+    padding: 5px;
+    
+    
+}
+
+.card{
+    background-color: coral;
+    width: 450px;
+    height: 250px;    
+    position: relative;
+    display: inline-block;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.caja1{
+    border-radius: 10x;
+    background-color:brown;
+    position: absolute;
+    
+}

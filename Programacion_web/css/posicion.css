@@ -1,0 +1,22 @@
+.caja{
+    background-color:darkgoldenrod;
+    margin:10px;
+    width: 40%;
+    height: 150px;
+}
+
+.caja2{
+    position: relative;
+    left: 50%;
+    bottom: 170px;
+}
+
+.padre{
+    width: 200px;
+    min-height: 200px;
+    background-color: gray;
+}
+
+.hijo{
+    background-color: azure;
+}

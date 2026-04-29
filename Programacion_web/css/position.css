@@ -1,0 +1,76 @@
+/*Posicionamiento en css: propiedad es position.
+1-static: elementos estan en un flujo normal.Ej: si la caja que estoy maquetando tiene display en bloque la posicion de las cajas una abajo de otra.
+Su posicion es natural. Cuando saben que el elemento no se va a mover.
+
+2-relative: es moverse de su posicion natural pero mantiene su espacio. Se mueve left rigth top botton.
+Su espacio original sigue siendo el mismo pero con la caja corrida.
+Cuando se usa cuando corro cajas chicas pocos espacios.
+
+3-absolute: rompe el flujo normal del diseno. La caja no ocupa el espacio inicial del diseno porque el elemento vecino sube automaticamente.
+
+4-fixed: la caja queda fija respecto a la pantalla del navegador. No se mueve aunque el usuario haga scroll.
+Para que se usa Menu flotante boton flotante.
+
+5-sticky: mezcla entre relative y absolute. Porque la caja queda fija cuando el scroll llegue a un valor.
+*/
+
+.cabeza{
+position:fixed;
+background-color:rgb(198, 18, 141);
+width: 98%;
+height: 180px;
+top: 0;
+}
+
+.caja{
+
+    background-color: lightblue;
+    margin:10px ;
+    width: 40%;
+    height: 150px;
+}
+
+.caja2{
+    position: relative;
+    left:50%;
+    bottom: 160px;
+}
+
+.padre{
+position:relative;
+width: 200px;
+height: 200px;
+background-color: grey;
+
+
+}
+
+.hijo{
+   position:absolute;
+   right: 50%;
+   top:0;
+    background-color: red;
+}
+.hijo1{
+background-color: black;
+color:antiquewhite;
+
+}
+
+.contenedor{
+    position: relative;
+}
+
+.etiqueta{
+    position: absolute;
+    background: blueviolet;
+    top: 0;
+    left: 0;
+}
+
+.boton{
+position:fixed;
+bottom: 20px;
+right: 20px;
+
+}

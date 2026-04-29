@@ -1,0 +1,98 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* block: que ocupan todo el ancho del diseno. Generan salto de linea.se pueda dar ancho y alto sin problemas. EJ: div,section,header,h,p,form.
+
+en linea: su ancho y alto depende del contenido. No generan salto de linea. No aceptan ancho y alto como propiedades. Solo acepta margin y padding de los laterales. Ej: enlace, span,img.
+
+inline-block: es un hibrido entre los 2. Se comporta como in-line pero permite alto,ancho,padding y margin.
+
+none: el elemento no se muestra. no ocupa lugar. Oculta elementos.
+
+*/
+
+.caja1,
+.caja2,
+.caja3,
+.caja4 {
+  border: 3px solid black;
+  height: 80px;
+  width: 40%;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+  display: inline-block;
+}
+
+.caja5,.caja6,.caja7{
+  border: 3px solid black;
+  margin: 3px;
+  padding: 15px;
+  text-align: center;
+  display: block;
+}
+
+.caja8,.caja9,.caja10{
+  border: 3px solid black;
+  height: 80px;
+  width: 40%;
+  margin: 0 auto;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caja1 {
+  background-color: cadetblue;
+  width: 24%;
+}
+
+.caja2 {
+  background-color: antiquewhite;
+  width: 24%;
+}
+
+.caja3 {
+  background-color: burlywood;
+  width: 24%;
+}
+
+.caja4 {
+  background-color: rgb(141, 212, 141);
+  width: 24%;
+}
+
+.caja5{
+    background-color: sienna;
+}
+
+.caja6{
+    background-color:darkorchid;
+}
+
+.caja7{
+    background-color: lightgray;
+}
+
+.caja8{
+    background-color: lightcoral;
+}
+
+.caja9{
+    background-color: lightsteelblue;
+}
+
+.caja10{
+    background-color: lightseagreen;
+}
+
+
+span {
+  border: 5px solid red;
+  display: block;
+  margin: 3px;
+  padding: 3px;
+}

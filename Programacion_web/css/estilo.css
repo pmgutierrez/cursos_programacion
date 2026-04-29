@@ -1,0 +1,92 @@
+/*background es el fondo del diseño, color es el color que va a tener la fuente*/
+/*pixeles: unidad de medida fija no es flexible. bordes lineas fijas,padding pero con cuidado.
+fallan en el responsive.
+em: unidad de medida flexible.1em: 16px. es escalable y se adapta al tamano del texto. botones, inputs.
+rem: unidad flexible y depende del tamano del texto.
+porcentaje: unidad de medida que toma el tamano del elemento padre.
+*/
+
+/* box-sizing: controla la sumatoria del alto y ancho de las cajas.
+2 valores:content-box y border-box.
+border-box: controla la sumatoria de cada uno de los elementos de la caja para que no se exceda de un limite.
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+background:#EDE5E4;
+max-width: 1080px;
+margin: 10px;
+}
+
+header{
+border:6px solid black;
+margin-bottom: 5px;
+border-radius: 10px;/*border-radius redondea los bordes.*/
+}
+
+.titulo{
+    text-align: center;
+}
+
+.seccion1{
+border: red 5px solid;
+height:220px ;/*height es el alto de la caja.*/
+width:50% ;/*width es el ancho de la caja.*/
+}
+
+.seccion2{
+border: 5px green solid;
+}
+
+/*
+font-family: es la familia de la fuente.
+font-size:tamano de la fuente.
+font-weigth:ancho de la fuente. 
+font-style: estilo de la fuente.
+text-align:modificamos la ubicacion del texto. center,rigth,left.
+*/
+
+.articulo {
+font-family: Arial, Helvetica, sans-serif;
+padding:15px ;
+width: 50%;
+margin: 15px;
+margin-left:55px;
+}
+
+/*text decoration: agrega o saca subrayado. se usa mucho al armar el menu.
+list-style-type: estilo de las vinetas.*/
+
+.menu{
+list-style-type: decimal;
+list-style-position: inside;
+}
+
+.menu li a{
+    text-decoration: none;
+}
+
+.lista1{
+    list-style-type: lower-alpha;
+    margin: 20px;
+}
+
+footer{
+    border:solid 5px blueviolet;
+    height: 50px;
+    margin-top: 10px;
+}
+
+header,footer,.seccion2{
+ width: 98%;
+}
+
+.lista1 > li {
+    color:red;
+    font-weight: 800;
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segundo documento</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">Este es mi primer pagina</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Section1</a></li>
+          <li><a href="#">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="seccion1">
+      <article class="articulo">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae velit
+        excepturi dolore minus corporis repudiandae quaerat maiores cumque qui
+        exercitationem alias nam esse quas reiciendis nihil, est asperiores
+        eligendi provident.
+      </article>
+    </section>
+
+    <aside>
+      <article>Hola a todos como estan?</article>
+      <ol class="lista1">
+        <li>Instagram</li>
+        <div>
+          <li>Whatsapp</li>
+        </div>
+      </ol>
+    </aside>
+
+    <br /><br />
+
+    <section class="seccion2">
+      <form action="datos.html" method="post">
+        <fieldset>
+          <legend>Formulario de Contacto</legend>
+
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            name="Nombre"
+            id="nombre"
+            placeholder="Juan Carlos...."
+          /><br />
+
+          <label for="pass">Contraseña</label>
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            maxlength="10"
+            minlength="6"
+          /><br />
+
+          <label for="">Correo Electronico</label>
+          <input type="email" name="correo" /><br />
+
+          <label for="">Fecha de nacimiento</label>
+          <input type="date" name="fecha_nac" id="" /><br />
+
+          <label for="">Telefono</label>
+          <input type="tel" name="" /><br />
+
+          <label for="">Subi tu foto</label>
+          <input type="file" name="" id="" /><br />
+
+          <input type="checkbox" name="opcion1" id="" />Fem<br />
+          <input type="checkbox" name="opcion2" id="" />Mas<br />
+          <input type="radio" name="opcion3" id="" />Trans<br />
+          <input type="radio" name="" id="" />Therian<br />
+
+          <input type="submit" value="Enviar Datos" />
+          <input type="reset" value="Borrar Datos" />
+          <button type="submit">Enviar datos.</button>
+          <button type="reset">Borrar Datos</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <footer></footer>
+  </body>
+</html>
