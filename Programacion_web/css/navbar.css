@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: black;
+    padding: 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+
+
+}
+
+.logo{
+    color: antiquewhite;
+    font-size: 25px;
+}
+
+.navbar a{
+    
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.navbar li{
+    margin:10px 20px;
+}
+.seccion1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+    gap: 20px;/* genera espacio entre cajas*/
+}
+.card{
+    width: 300px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(12, 3, 3, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.card h3{
+    margin: 15px 0;
+}
+
+.card p{
+    margin-bottom:15px ;
+}
+
+.card a{
+    text-decoration: none;
+    background-color: rgb(67, 67, 242);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.formulario{
+    width: 800px;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.formulario h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.seccion2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 900px;
+    border: 2px solid black;
+
+}
+
+.fila{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+input,textarea{
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+}

@@ -1,0 +1,229 @@
+
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f8fafc, #e2e8f0);
+      color: #222;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      text-align: center;
+      position: relative;
+      padding: 20px 50px;
+      background: rgba(17,17,17,0.95);
+      color: white;
+      padding: 20px 50px;
+      background: rgba(17,17,17,0.95);
+      color: white;
+      
+
+      animation: bajarNavbar 1s forwards;
+    }
+
+    .logo {
+      display: inline-block;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar nav {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: 0;
+    }
+
+    .navbar nav ul {
+      list-style: none;
+    }
+
+    .navbar nav li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .navbar nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+
+    .navbar nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: aparecerTexto 1s forwards;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: aparecerTexto 1s 0.4s forwards;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      border: none;
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 20px rgba(37,99,235,0.3);
+    }
+
+    /* CARDS */
+    .cards {
+      text-align: center;
+      padding: 60px 30px;
+    }
+
+    .card {
+      animation-delay: 0.3s;
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+      width: 280px;
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+      opacity: 0;
+      transform: translateY(40px);
+      animation: subirCard 1s forwards;
+    }
+
+    
+
+    
+
+    .card:hover {
+      transform: translateY(-12px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .card p {
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* BOTÓN FLOTANTE */
+    .boton-flotante {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .boton-flotante a {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-decoration: none;
+      background: #2563eb;
+      color: white;
+      font-size: 30px;
+      border-radius: 50%;
+
+      transition: transform 0.3s ease;
+      animation: aparecerBoton 1s forwards;
+    }
+
+    .boton-flotante a:hover {
+      transform: scale(1.1);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111;
+      color: white;
+      margin-top: 50px;
+    }
+
+    /* KEYFRAMES */
+    @keyframes bajarNavbar {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes aparecerTexto {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes subirCard {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes aparecerBoton {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+  
+    }
+    /*
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+    */  
+    
+      

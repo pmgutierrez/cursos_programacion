@@ -1,0 +1,49 @@
+
+/*Empezamos a usar display flex. 
+flex-direction: row (default)/ column(eje vertical)/row-reverse/column-reverse.
+justify-content: acomoda los elementos en la direccion indicada. flex-start(al inicio)/flex-end(final)/center/space-between: espacio entre si./space-around:espacio entre las cajas y los margenes./space-evenly espacio entre cajas y entre cajas y margenes proporcionales.
+ORDENES SOBRE EL EJE CRUZADO.
+align-items: acomoda cajas en el eje contrario.
+flex-start. flex-end. center
+flex-wrap: que hacer cuando no entran las cajas en el ancho. no-wrap por default. wrap rompe la linea. wrap-reverse.
+
+
+
+
+*/
+
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    
+}
+
+
+.caja{
+
+height: 120px;
+width: 120px;
+text-align: center;
+margin: 10px;
+
+}
+
+.caja1{
+    background: red;
+}
+.caja2{
+    background: blue;
+    
+}
+.caja3{
+    background: green;
+}
+.caja4{
+    background:pink;
+}

@@ -1,0 +1,78 @@
+*
+{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+.contenedor{
+    display: flex;
+    height:800px;
+    align-items: center;
+    
+}
+
+.caja{
+    width: 300px;
+    height: 100px;
+    background: grey;
+    margin: 10px;
+}
+
+/*flexbox: los hijos pueden crecer,achicarse, ocupar espacio sobrante,cambiar el orden, tomar una aliniacion diferente el resto.
+/flex-grow: cuanto puede crecer un hijo? logica es pensar si existe espacio en ese contenedor para que la caja o las cajas crezcan.
+flex-shrink: cuanto puedo achicarse el hijo... cuanto se puede achicar las cajas para que entre en un contenedor.
+flex-basis: darle a la caja un tamano de inicio antes de repartir espacios que sobran. cuanto mide de entrada la caja hija o las cajas hijas.
+3 propiedades juntos::
+flex: flex-grow flex-shrink flex basis;
+flex: 1 2 150px;
+align-self: el hijo que le aplico la propiedad se alinea distinto al resto.
+order: cambiar el orden visual de las cajas. NO TRANSFORMA HTML.
+
+*/
+/*
+.caja1{
+    flex-grow: 1;
+}
+
+.caja2{
+    flex-grow: 2;
+}
+
+.caja3{
+    flex-grow: 1;
+}*/
+/*
+.caja1{
+    flex-shrink: 1;
+}
+.caja2{
+    flex-shrink: 3;
+}
+.caja3{
+    flex-shrink: 3;
+}*/
+/*
+.caja1{
+    flex-basis: 150px;
+    flex-grow: 2;
+}
+
+.caja2{
+    flex-grow: 1;
+}
+.caja3{
+    flex-grow: 1;
+}*/
+/*
+.caja2{
+    align-self: flex-end;
+}*/
+
+.caja1{
+    order:2;
+}
+.caja2{
+    order:3;
+}
+.caja3{
+    order: 1;
+}
