@@ -4,9 +4,9 @@
 #armo una lista para guardar diccionario.
 
 def agregar_producto(productos):
-    nombre=input('Nombre del producto')
-    precio=float(input('Precio'))
-    stock=int(input('Numero de stock'))
+    nombre=input('Nombre del producto: ')
+    precio=float(input('Precio: '))
+    stock=int(input('Numero de stock: '))
 
     producto={
         'nombre':nombre,
@@ -62,7 +62,7 @@ while True:
     print('6.Vender producto')
     print("7.SALIR")
 
-    opciones=int(input("Elije una opcion"))
+    opciones=int(input("Elije una opcion: "))
 
     if opciones == 1:
         agregar_producto(productos)

@@ -5,7 +5,7 @@ def duplicar(x):
 
 duplicar(2)
 
-print(duplicar(2))
+print("Duplica: ",duplicar(2))
 
 #pasamos a funcion anonima: se declara con la palabra lambda. 
 
@@ -15,28 +15,38 @@ f= lambda x: x * 2
 
 f(5)
 
-print(f(5))
+print("Duplica con lambda: ",f(5))
 
+# Funcion sumar() 
 def sumar (a,b):
     return a + b
 
 
 total= sumar(2,10)
 
+print("Funcion sumar():",total)
+
+# Sumar con lambda
 lambda a,b: a + b
 
 sumar= lambda a,b:a+b
 
-print(sumar(5,10))
+teclado1 = int(input("Ingrese primer valor: "))
+teclado2 = int(input("Ingrese segundo valor: "))
+
+print("Sumar con lambda: ",sumar(teclado1,teclado2))
 
 # como utilizar lambda en funciones mas complejas.
 
 def descuento(precio):
     return precio * 0.15
 
-descuento= lambda precio: precio * 0.15
-
-print(descuento(100000))
+porcentajeDescuento = float(input("Que descuento aplica: "))
+descuento2= lambda precio: precio * porcentajeDescuento
+precioProducto = float(input("Precio Producto:"))
+nuevoValor = precioProducto - descuento2(precioProducto)
+print("Descuento: ",descuento2(precioProducto))
+print("Precio con Descuento: ", nuevoValor)
 
 # Mayores a 18.
 
