@@ -1,0 +1,71 @@
+/*  Barra busqueda flexible. El boton de busqueda va a  mantener el tamaño.
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box; 
+}
+
+.contenedor-search{
+    display: flex;
+    background-color: #f0f0f0;
+    padding:20px;
+    border-radius: 10px;
+}
+
+.search{
+    flex-grow:1;
+    padding:5px;
+    border:1px solid #ccc;
+}
+
+.btn{
+    flex:0 0 auto;
+
+}
+
+/* tres card en fila y una de las card tiene mucho otra tiene un renglon y queremos sin importar el texto todos los botones comprar alineados.*/
+
+.contenedor-card{
+    padding:20px;
+    display:flex;
+    background-color: rgb(245, 212, 170);
+    justify-content: center;
+    margin-top: 10px;
+    gap:20px;
+    
+}
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    background-color: aquamarine;
+    padding:20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3{
+    color:#333;
+    margin-top: 0;
+
+}
+.card p{
+    margin:5px 0;
+    flex-grow: 1;
+}
+.card button{
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ff4757;
+    font-weight: bold;
+    flex-shrink: 0;
+    
+}
+
+/* 2 soluciones para alinear los elemenots de la card.
+usar flex en las tarjetas y acomodar texto y boton con flex.
+*/
