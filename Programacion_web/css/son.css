@@ -69,3 +69,42 @@
 /* 2 soluciones para alinear los elemenots de la card.
 usar flex en las tarjetas y acomodar texto y boton con flex.
 */
+footer{
+    padding: 24px;
+    border-radius: 10px;
+    background: #111;
+    color: #f0f0f0;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.footer-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 18px;
+    
+}
+
+.footer-menu li{
+    padding: 10px 15px;
+    background: steelblue;
+    border-radius: 8px;
+}
+.footer-redes{
+    display: flex;
+    gap:15px;
+}
+.footer-redes a{
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #ccc;
+    color: #111;
+    
+}
