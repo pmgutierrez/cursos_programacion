@@ -107,5 +107,4 @@ for empleado in cursor.fetchall():
     print(f"ID:{empleado[0]},Nombre: {empleado[1]},Salario: {empleado[2]}")
 
 conexion.close()
-
-
+print("Conexion cerrada con exito.")
