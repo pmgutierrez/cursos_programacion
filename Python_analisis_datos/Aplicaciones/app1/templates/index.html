@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales con Jinja2</title>
+</head>
+<body>
+    <h1>Listados</h1>
+<!-- VARIABALES-->
+ {{ nombre }}
+ {{ edad }}
+
+ <!--LISTA-->
+<h2>Listado</h2>
+<ul>
+ {% for producto in productos %}
+<li>{{ producto }}</li>
+
+{% endfor %}
+</ul>
+<!--DICCIONARIO-->
+<h2>Usario</h2>
+<h2>{{ perfil.nombre }}</h2>
+<h2>{{ perfil.dni }}</h2>
+
+</body>
+</html>
