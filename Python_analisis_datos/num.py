@@ -189,3 +189,130 @@ inflacion_mes=np.array([2.6,3.4,3.6,2.4,2.3,4.0])
 mes_picoinflacion=inflacion_mes.argmax()
 
 print('mes de mayor inflacion: ',mes_picoinflacion)
+
+#Recorridos y condicionales en matrices de 2 dimensiones.
+#edad,score,facturacion columnas, filas son los clientes.
+
+tabla_clientes=np.array([
+[34,710,1500],
+[28,620,2000],
+[52,800,4200]
+])
+
+columna_facturacion=tabla_clientes[:,2]
+
+#condicion que la facturacion sea mayor a 2500.
+#se enmascara en una variable la condicion.
+mascara_vip=columna_facturacion>2500
+#Luego en otra variable con la condicion recorremos la matriz orignal.
+clientes_vip=tabla_clientes[mascara_vip,:]
+
+print(clientes_vip)
+
+#Matriz 3x3 filas de zonas geograficas y columnas con rangos de temperatura.
+
+temperaturas_zonas= np.array([
+[22.1,26.4,28.9],
+[17.3,21.5,28.1],
+[25.,27.3,22.9]
+])
+#las temperaturas que sean mayores a 25 grados las declaro como MAYORES y el resto NORMAL.
+
+reporte_zonal=np.where(temperaturas_zonas>25,'Alta','Normal')
+
+print(reporte_zonal)
+
+# medicos id antiguedad y rendimiento.
+
+medicos=np.array([
+[1001, 3 , 85],
+[1002, 5, 95],
+[1003,1,70],
+[1004,10,92]
+])
+
+# Evaluar el rendimiento de estos medicos siendo mayor a 90 el excelente.
+# la condicion sera aplicada a la columna numero 2.
+#condicion es [:,2]>90
+
+mascara_excelentes=medicos[:,2]>=90
+
+rendimiento_excelente=medicos[mascara_excelentes,:]
+
+print("Medicos premiados: ",rendimiento_excelente)
+
+#Limpieza de datos con una condicion.
+#Matriz de ventas semanales. Mi empleado carga datos de dias donde no hay ganancia con numeros negativos.
+#Pero el sistema no acepta numeros negativos tira error.
+# Agregue una condicion al sistema que reemplaza los numeros negativos por 0.
+
+ventas_cerveceria=np.array([
+    [150,-999,300],
+    [-999,420,200],
+    [180,34,50]
+])
+
+ventas_cerveceria[ventas_cerveceria== -999]=0
+
+print('Balance final de fin de semana en los tres turnos',ventas_cerveceria)
+
+#Creciemiento poblacional de un virus en una 3 poblaciones de regiones lejanas entre si.
+#el numero de la poblacion esta en millones.
+#Tengo que generar un reporte de zonas con Peligro y zonas permitidas. Mas de 25>peligro.
+
+
+poblacion_virus=np.array([
+[22.1,26.5,23.0],
+[18.9, 21.5,28.1],
+[25.0,27.3,22.9],
+])
+
+reporte_seguridad=np.where(poblacion_virus>25.0,'Peligro','Ok')
+
+print('Reporte del Congo: ',reporte_seguridad)
+
+#Valores Maximos y Minimos en matrices dobles entrada fila y columna.
+
+#1 Global: aplastar las matriz y genera un numero puedo el maximo o minimo y te la posicion matriz.
+
+#Ventas 2 locales en Enero,Febrero y Marzo.
+
+sucursales_pergamino=np.array([
+    [100,89,190],
+    [140,77,290]
+])
+
+#Sucursal 0 y 1. Si la "estiro"indices: 0,1,2,3,4,5
+
+mayor_trimestral=np.argmax(sucursales_pergamino)
+
+print("Mayor venta trimestral: ",mayor_trimestral)
+
+#Por columnas. axis=0
+
+#Sucursal con mas ventas.
+
+sucursal_ganadora=np.argmax(sucursales_pergamino,axis=0)
+
+print("Sucursal con mas ventas",sucursal_ganadora)
+#tomo las filas.
+peores_ventas=np.argmin(sucursales_pergamino,axis=1)
+
+print("Peores ventas:",peores_ventas)
+
+#Peligro del NaN que representa un dato roto,vacio o no del tipo de valor esperado.
+#Si yo tengo que calcular el promedio de una matriz y tengo un valor NaN el resultado es NaN
+
+consumo_diario=np.array([
+    [120,170],
+    [80,np.nan]
+])
+
+promedio_diario=consumo_diario.mean()
+print(promedio_diario)
+
+#Limpiar datos erroneos.
+
+promedio_diario_real=np.nanmean(consumo_diario)
+
+print('Promedio sin datos erroneos: ',promedio_diario_real)
