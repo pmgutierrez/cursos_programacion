@@ -13,14 +13,14 @@ cursor.execute("DROP TABLE IF EXISTS departamentos")
 #CREO UNA TABLA NUEVA PADRE PARA PODER RELACIONAR CON LA TABLA LLAMADA EMPLEADOS.
 
 cursor.execute("""
-            CREATE TABLE IF NOT EXISTS        departamentos(
+            CREATE TABLE IF NOT EXISTS departamentos(
             id_depto INTEGER PRIMARY KEY AUTOINCREMENT,
             nombre_depto TEXT NOT NULL UNIQUE
                )""")
 
 cursor.execute(""" 
 CREATE TABLE IF NOT EXISTS empleados
-               (id_empleados  INTEGER PRIMARY KEY AUTOINCREMENT,
+               (id_empleados INTEGER PRIMARY KEY AUTOINCREMENT,
                dni INTEGER UNIQUE NOT NULL,
                nombre TEXT NOT NULL,
                puesto TEXT,
