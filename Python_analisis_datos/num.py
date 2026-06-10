@@ -6,7 +6,7 @@ precios_iva=[]
 for precio in precios_lista:
     precios_iva.append(precio * 1.21)
 
-print(precios_iva)
+print("bucle for:",precios_iva)
 
 #Numpy me permite usar estructuras mas rapidas y menos pesadas por ej para calculos matematicos a gran escala.
 
@@ -14,8 +14,8 @@ print(precios_iva)
 precios_nplista=np.array([100,250,68,90])#primer array de np. Mantiene homogeneidad de datos.
 precios_npiva= precios_nplista * 1.21
 
-print(precios_npiva)
-#que pasa cuando no mantengo los valores del mismo tipo.
+print("np.array: ", precios_npiva)
+#Que pasa cuando no mantengo los valores del mismo tipo.
 arreglo_raro=np.array([10,30,4.5])
 
 print(arreglo_raro)
@@ -27,12 +27,13 @@ dimension_una=np.array([5.5,6.7,10.0,3.8])
 #2 dimensiones: columnas y filas. muy usado cuando tenemos base de batos.
 #ej: meses: enero/febrero/marzo
 dimension_dos=np.array([
-[1000,2000,3000], #Vendedor0 
-[300,400,5000],#Vendedor1
-[500,8000,640]#Vendedor2
+    [1000,2000,3000], #Vendedor0 
+    [300,400,5000],#Vendedor1
+    [500,8000,640]#Vendedor2
 ])
 bloque_ventas=dimension_dos[1:2,2:3]
 print('Ventas de marzo ',bloque_ventas)
+
 #dimension3: agregamos otro bloque de datos.
 #filas:dias, columnas: cursos(codigo1,codigo2)
 dimension_tres=np.array([
