@@ -317,3 +317,4 @@ print(promedio_diario)
 promedio_diario_real=np.nanmean(consumo_diario)
 
 print('Promedio sin datos erroneos: ',promedio_diario_real)
+#probando commit con Marca M
