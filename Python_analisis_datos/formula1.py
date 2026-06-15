@@ -42,3 +42,4 @@ puntajes=puntajes_prueba.reshape(-1,1)
 #Auditar las penalizaciones. Que cantidad de errores cometen los pilotos habitualmente y cual es el error mas comun.
 # voy a usar unique.
 penalizaciones=dataset_completo[:,2]
+#cambios para probar commit con Marca M
