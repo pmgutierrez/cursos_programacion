@@ -87,7 +87,3 @@ while True:
 
     elif opciones==7:
         break
-
-
-
-        
